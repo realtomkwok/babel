@@ -1,0 +1,54 @@
+{
+  "name": "babel-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material/react-button": "^0.15.0",
+    "@material/react-drawer": "^0.15.0",
+    "@material/react-fab": "^0.15.0",
+    "@material/react-layout-grid": "^0.15.0",
+    "@material/react-list": "^0.15.0",
+    "@material/react-material-icon": "^0.15.0",
+    "@material/react-menu-surface": "^0.15.0",
+    "@material/react-select": "^0.15.0",
+    "@material/react-snackbar": "^0.15.0",
+    "@material/react-text-field": "^0.15.0",
+    "@material/react-top-app-bar": "^0.15.0",
+    "@material/react-typography": "^0.15.0",
+    "@material/rtl": "^4.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "react-text-loop": "^2.3.0",
+    "resolve-url-loader": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  },
+  "proxy": "http://127.0.0.1:5000/"
+}

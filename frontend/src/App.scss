@@ -1,0 +1,164 @@
+@import '@material/react-list/index.scss';
+@import '@material/react-menu-surface/index.scss';
+@import '@material/react-menu/index.scss';
+@import '@material/react-select/index.scss';
+@import '@material/react-material-icon/index.scss';
+@import '@material/react-layout-grid/index.scss';
+@import '@material/react-fab/index.scss';
+@import "@material/react-snackbar/index.scss";
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-material-icon/index.scss';
+@import '@material/theme/color-palette';
+@import '@material/react-menu-surface/index.scss';
+// import minxins
+@import '@material/top-app-bar/mixins';
+@import '@material/select/mixins';
+@import '@material/fab/mixins';
+
+@mixin elementGutter {
+    margin-right: 16px;
+}
+.inputContainer {
+    position: fixed;
+    bottom: 4vh;
+    display: inline-flex;
+}
+
+.langSelector {
+    @include elementGutter();
+}
+
+.inputField {
+    font-size: 36px;
+}
+
+// .firstUser > .resultInput > .inputField {
+//     color: #FF1744;
+// }
+
+// .secondUser > .resultInput > .inputField {
+//     color: #2962FF ;
+// }
+
+.topAppBar {
+    @include mdc-top-app-bar-ink-color(black);
+    @include mdc-top-app-bar-icon-ink-color(black);
+    @include mdc-top-app-bar-fill-color(white);
+    // border-bottom: 1px solid rgb(128, 128, 128);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.select-alternate {
+    @include mdc-select-container-fill-color(white);
+    @include mdc-select-label-color(black);
+    // @include mdc-select-outline-color(black);
+}
+
+.fab-alternate {
+    @include mdc-fab-accessible(black);
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}
+
+.splashBanner-header {
+    display: block;
+    height: 280px;
+    width: 100%;
+    z-index: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #6200EE;
+    color: white;
+}
+
+.splashBanner-logo {
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-left: 28px;
+}
+
+.splashBanner-container {
+    position: relative;
+
+    display: inline-flex;
+    width: 100%;
+}
+
+.splashBanner-greeting {
+    font-weight: 500;
+    font-size: 72px;
+    margin: 48px 0 0 28px;
+    position: relative;
+}
+.splashBanner-content {
+    position: relative;
+    margin-top: 64px;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.inlineIcon {
+    font-size: 18px;
+}
+
+.splashBanner-content > p {
+    margin: 56px 0;
+    width: 320px;
+    line-height: 1.5rem;
+}
+
+.splashBanner-backdrop {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    background-color: rgba(0,0,0,.5);
+}
+
+.mdc-menu-surface {
+    margin-right: 24px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+    .firstUser {
+        transform: rotate(180deg);
+    }
+
+    .firstUser > .resultInput {
+        margin-bottom: 30vh;
+    }
+
+    .firstUser > .inputContainer {
+        bottom: 0;
+    }
+
+    .secondUser {
+        position: fixed;
+        top: 45%;
+        padding-top: 5vh;
+    }
+    .inputField {
+        font-size: 8vw;
+    }
+
+    body > div:nth-child(5) {
+        transform: rotate(180deg) translateY(-100%);
+    }
+
+}
